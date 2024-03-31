@@ -31,7 +31,7 @@ Users should be able to:
 
 ### What I learned
 
-- How to convert Unicode values to the equivalent String, using ```String.fromCharCode() ```
+- How to convert Unicode values to the equivalent String, using ```String.fromCharCode()```
 - How to copy text to clibpoard
 - How to create a custom range input that looks consistent across all browsers
 
@@ -41,7 +41,7 @@ Users should be able to:
 
 ### Useful Resources
 
-- [Convert Hex colors to CSS filter]https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/
+- [Convert Hex colors to CSS filter](https://www.smashingmagazine.com/2021/12/create-custom-range-input-consistent-browsers/)
 
 ### Screenshots
 
