@@ -31,7 +31,7 @@ Users should be able to:
 
 ### What I learned
 
-- How to convert Unicode values to the equivalent String, using ```js String.fromCharCode() ```
+- How to convert Unicode values to the equivalent String, using ```String.fromCharCode() ```
 - How to copy text to clibpoard
 - How to create a custom range input that looks consistent across all browsers
 
