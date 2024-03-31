@@ -229,12 +229,6 @@ input[type="range"]:focus::-moz-range-thumb{
     cursor: grabbing;
 }
 
-/*
-outline: 3px solid #a3ffaa;
-outline-offset: 0.125rem;    
-*/
-
-
 @media(max-width: 480px){
 
     .password-generator{
