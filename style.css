@@ -1,0 +1,244 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    background-color: #131219;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.password-generator{
+    width: 410px;
+    color: #eae9ef;
+    text-align: center;
+}
+
+h3{
+    color: #716f7d;
+    margin-bottom: 2rem;
+}
+
+.result-container, .settings-container{
+    background-color: #24232a;
+    padding: 1.5em;
+}
+
+.result-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.generated-pass{
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 1.25rem;
+    color: #eae9ef;
+}
+
+.generated-pass::placeholder{
+    color: #504f58;
+    font-weight: bold;
+}
+
+.setting{
+    display: flex;
+}
+
+.copy-clipboard{
+    filter: invert(81%) sepia(39%) saturate(375%) hue-rotate(70deg) brightness(103%) contrast(104%); /* Loss: 0.0 */
+    cursor: pointer;
+}
+
+/* https://isotropic.co/tool/hex-color-to-css-filter/ */
+
+.copy-clipboard:hover{
+    filter: invert(100%);
+}
+
+input[type="range"]{
+    margin-bottom: 2em;
+    width: 100%;
+}
+
+.setting{
+    display: flex;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+#pass-length{
+    color: #a3ffaa;
+}
+
+.setting:first-of-type{
+    display: flex;
+    justify-content: space-between;
+}
+
+input[type="checkbox"]{
+    cursor: pointer;
+}
+
+/*Não posso alterar o styling da checkbox pq, se não estou em erro, é renderizada pelo Browser. Tenho de a esconder e criar a minha prórpia*/
+input[type="checkbox"]{
+    opacity: 0;
+    position: absolute;
+}
+
+.myCheckbox{
+    height: 13px;
+    width: 13px;
+    border: 1px solid #a3ffaa;
+    position: relative;
+    top: 0;
+    pointer-events: none;
+    cursor: pointer;
+}
+
+input[type="checkbox"]:checked{
+    opacity: 100%;
+    accent-color: #a3ffaa;
+}
+
+.strength-container{
+    width: 100%;
+    padding: 1.25em 1.5em;
+    background-color: #131219;
+    margin-bottom: 1.25em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-container{
+    color: #615f6d;
+    font-size: .9rem;
+}
+
+.right-container{
+    display: flex;
+    gap: 1em;
+}
+
+.uppercase{
+    text-transform: uppercase;
+}
+
+.strength-rating{
+    display: flex;
+    gap: 6px;
+}
+
+.rectangle{
+    height: 100%;
+    width: 7px;
+    border: 1px solid white;
+}
+
+.active{
+    background-color: #f9ce64;
+}
+
+button.generate{
+    width: 100%;
+    cursor: pointer;
+    background-color: #a3ffaa;
+    border: 1px solid #a3ffaa;
+    padding: 1.25em 1.5em;
+    color: #24232a;
+    font-size: .9rem;
+    font-weight: bold;
+}
+
+button.generate:enabled:hover{
+    background-color: transparent;
+    color: #a3ffaa;
+}
+
+button:disabled{
+    background-color: #a3ffab80;
+    border: 1px solid #a3ffab80;
+    color: #24232a80;
+}
+
+input[type="range"]{
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+}
+
+/* Chrome, Safari, Opera, and Edge Chromium */
+input[type="range"]::-webkit-slider-runnable-track{
+    background: #181720;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-track{
+    background: #181720;
+    height: 0.5rem;
+    cursor: pointer;
+}
+
+/* Chrome, Safari, Opera, and Edge Chromium */
+input[type="range"]::-webkit-slider-thumb{
+    -webkit-appearance: none;
+    appearance: none;
+    margin-top: -6px;
+    background-color: #e6e5e9;
+    height: 1.25rem;
+    width: 1.25rem;
+    border-radius:12px;
+}
+
+/* Firefox */
+input[type="range"]::-moz-range-thumb{
+    border: none; /* Removes extra border that FF applies */
+    border-radius: 0; /* Removes default border-radius that FF applies */
+}
+
+input[type="range"]:focus {
+    outline: none;
+}
+
+/* Chrome, Safari, Opera, and Edge Chromium */
+input[type="range"]:focus::-webkit-slider-thumb{
+    border: 1.5px solid #a3ffaa;
+    background-color: #181720;
+    cursor: grabbing;
+}
+
+/* Firefox */
+input[type="range"]:focus::-moz-range-thumb{
+    border: 1.5px solid #a3ffaa;
+    background-color: #181720;
+    cursor: grabbing;
+}
+
+/*
+outline: 3px solid #a3ffaa;
+outline-offset: 0.125rem;    
+*/
+
+
+@media(max-width: 480px){
+
+    .password-generator{
+        width: 90%;
+    }
+
+}
