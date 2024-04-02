@@ -93,7 +93,7 @@ input[type="checkbox"]{
     cursor: pointer;
 }
 
-/*Não posso alterar o styling da checkbox pq, se não estou em erro, é renderizada pelo Browser. Tenho de a esconder e criar a minha prórpia*/
+/*Não posso alterar o styling da checkbox pq, se não estou em erro, é renderizada pelo OS (e não pelo Browser). Tenho de a esconder e criar a minha prórpia*/
 input[type="checkbox"]{
     opacity: 0;
     position: absolute;
